@@ -31,6 +31,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import TextContent, Tool
 
+from src._version import __version__ as SERVER_VERSION
 from src.tools.carving import extract_features as carve_extract_features
 
 # Lazy-loaded tool modules (imported once at module level)
@@ -38,7 +39,6 @@ from src.tools.memory import analyze as mem_analyze
 from src.tools.memory import dump_cmdline, list_processes, scan_network
 from src.tools.timeline import build as timeline_build
 from src.tools.timeline import filter_timeline
-from src._version import __version__ as SERVER_VERSION
 
 # ── Configuration ──────────────────────────────────────────────────
 logging.basicConfig(
