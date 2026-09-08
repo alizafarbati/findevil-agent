@@ -78,9 +78,13 @@ TOOL_LOCATIONS = {
     "python3": {
         "linux": ["/usr/bin/python3", "/usr/local/bin/python3"],
         "darwin": ["/usr/bin/python3", "/opt/homebrew/bin/python3"],
-        "win32": [r"C:\Python314\python.exe", r"C:\Python313\python.exe",
-                  r"C:\Python312\python.exe", r"C:\Python311\python.exe",
-                  r"C:\Python310\python.exe"],
+        "win32": [
+            r"C:\Python314\python.exe",
+            r"C:\Python313\python.exe",
+            r"C:\Python312\python.exe",
+            r"C:\Python311\python.exe",
+            r"C:\Python310\python.exe",
+        ],
     },
     "debugfs": {
         "linux": ["/usr/bin/debugfs", "/usr/local/bin/debugfs"],

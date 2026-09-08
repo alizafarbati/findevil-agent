@@ -99,8 +99,9 @@ jobs:
       # Test evidence generation script not yet available; using inline test data instead
       - name: Ensure test directories exist
         run: |
-          mkdir -p /evidence/disk /evidence/memory /evidence/network /evidence/cases
-        continue-on-error: true
+          sudo mkdir -p /evidence/disk /evidence/memory /evidence/network /evidence/cases
+          sudo mkdir -p /results/audit /results/carved /results/timelines /results/reports
+          sudo chmod -R a+rwx /evidence /results
 
       - name: Run unit tests
         run: |
